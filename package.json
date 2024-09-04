@@ -2,7 +2,8 @@
   "name": "digiboard",
   "private": true,
   "scripts": {
-    "dev": "nodemon server/index.ts",
+    
+    "dev": "nodemon --exec ts-node ./server/index.ts",
     "dev:client": "ts-node server/index.ts",
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
@@ -14,6 +15,7 @@
     "express": "^4.17.3",
     "framer-motion": "^6.3.3",
     "next": "latest",
+    "nodeman": "^1.1.2",
     "react": "^17.0.2",
     "react-colorful": "^5.5.1",
     "react-dom": "^17.0.2",
@@ -50,6 +52,7 @@
     "prettier": "^2.6.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.7",
+    "ts-node": "^10.9.2",
     "typescript": "4.5.4"
   }
 }
